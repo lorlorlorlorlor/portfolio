@@ -204,10 +204,9 @@ h3 {
     &:hover {
         .cool-stuff {
             .cool-stuff-content {
-                overflow: hidden;
-                width: 800px;
-                height: 400px;
-                transition: 0.2s;                
+                width: 711px;
+                height: 400px;        
+                transition: 0.2s;        
                 iframe {
                     width: 100%;
                     height: 400px;
@@ -223,6 +222,7 @@ h3 {
         justify-content: center;
         align-items: center;
         justify-items: center;
+        background-color: $dark;
         .play-button {
             cursor: pointer;
             width: 60px;
@@ -238,10 +238,12 @@ h3 {
             text-align: center;
         }
         .cool-stuff-content {
+            background-color: $dark;
             overflow: hidden;
             width: 400px;
             height: 400px;
             aspect-ratio: 16 / 9;
+            transition: 0.2s;     
             iframe {
                 width: 500%;
                 height: 650px;
