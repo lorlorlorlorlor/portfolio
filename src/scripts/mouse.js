@@ -8,13 +8,13 @@ $(document).on('mousemove', function(e){
         $('.mouse').css("background-color", "#38bd95");
         $('.mouse').html("some of my projects");
     }).mouseleave(function() {
-        $('.mouse').html("💥")
+        $('.mouse').html("enjoy!")
     });
     $('iframe').mouseenter(function(){
         $('.mouse').css("background-color", "#dfb0bf");
         $('.mouse').html("some of my inspirations");
     }).mouseleave(function() {
-        $('.mouse').html("💥")
+        $('.mouse').html("☻")
     });
     $('#header').mouseenter(function(){
         $('.mouse').css("background-color", "#38bd95");
