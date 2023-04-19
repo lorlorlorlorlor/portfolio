@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/laore/static/css/main.ef8220a5.css",
+    "main.js": "/laore/static/js/main.abcd55a7.js",
+    "static/js/787.15d8d641.chunk.js": "/laore/static/js/787.15d8d641.chunk.js",
+    "index.html": "/laore/index.html",
+    "main.ef8220a5.css.map": "/laore/static/css/main.ef8220a5.css.map",
+    "main.abcd55a7.js.map": "/laore/static/js/main.abcd55a7.js.map",
+    "787.15d8d641.chunk.js.map": "/laore/static/js/787.15d8d641.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ef8220a5.css",
+    "static/js/main.abcd55a7.js"
+  ]
+}

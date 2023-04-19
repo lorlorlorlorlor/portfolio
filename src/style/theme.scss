@@ -1,0 +1,272 @@
+// import fonts
+@import url('https://fonts.cdnfonts.com/css/nitti');
+@import url('https://fonts.cdnfonts.com/css/phantom-storm');
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,200;0,400;0,500;1,200&display=swap');
+
+
+$title: 'Phantom Storm Wide', sans-serif;
+$paragraph: 'Nitti', serif;
+
+$light: white;
+$dark: black;
+
+$cold-color: #38bd95;
+$warm-color: #dfb0bf;
+
+
+
+body {
+    width: 100%;
+    height: 100vh;
+    max-height: 100vh;
+    overflow: hidden;
+}
+
+p, h2, h3, h4 {
+    font-family: $paragraph;
+    color: $dark !important;
+}
+
+h1 {
+    font-size: 10rem !important;
+    font-family: $title;
+    font-weight: bolder;
+    color: $dark;
+}
+
+h2 {
+    font-size: 25px;
+}
+
+h3 {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+::selection {
+    background-color: $cold-color;
+    color: $warm-color;
+}
+
+.app-content {
+    position: absolute;
+    top: 0;
+    padding-top: 1.8rem;
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    background-color: $light;
+    border-top: 2px solid $dark;
+}
+
+.mouse {    
+    position:fixed;
+    top:0;
+    left:0;
+    width: auto;
+    height: fit-content;
+    border: 2px solid $dark;
+    background-color: $warm-color;
+    color: $dark;
+    z-index:5;
+    padding: 0.5rem;
+    font-family: $paragraph;
+    font-weight: bolder;
+}
+
+#header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    background-color: $warm-color;
+    border-bottom: 2px solid $dark;
+    height: 4rem;
+    z-index: 2;
+    .header-marquee {
+        p {
+            color: $dark !important;
+            text-transform: uppercase;
+            font-weight: bolder;
+            font-size: 30px;
+        }
+    }
+}
+
+#footer {
+    z-index: 2;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    background-color: $cold-color;
+    border-top: 2px solid $dark;
+    height: 4rem;
+    .footer-marquee {
+        font-weight: 600;
+        p {
+            position: relative;
+            bottom: 10px;
+            color: $dark !important;
+            text-transform: uppercase;
+        }
+    }
+}
+
+#about {
+    width: 100%;
+    height: max-content;
+    z-index: 0;
+    .main-title-container {
+        position:relative;
+        width: 100%;
+        h1 {
+            font-size: 150vh !important;
+            text-align: left;
+            line-height: auto;
+            background-color: $light;
+        }
+    }
+    .about-info-container {
+        p {
+            margin: 1.5rem !important;
+            text-align: justify !important;
+        }
+    }
+}
+
+#portfolio {
+    z-index: 2;
+    position: absolute;
+    bottom: 4rem;
+    right: 0;
+    padding: 3rem;
+    height: fit-content;
+    border: 2px solid $dark;
+    background-color: $light;
+
+    a, a:link, a:hover, a:visited {
+        text-decoration: none;
+        color: $dark;
+    }
+    
+    .project-details {
+        display: flex;
+        justify-items: center;
+        align-content: center;
+        width: 20rem;
+        margin-bottom: 0.8rem;
+        cursor: pointer;
+
+
+
+        &:hover {
+            .project-link {
+                color: $warm-color !important;
+                transform: rotate(45deg);
+            }
+        }
+        .project-text {
+            display: flex;
+            flex-direction: column;
+            text-transform: uppercase;
+            h3, h4 {
+                margin: 0 !important;
+                padding: 0 !important;
+                text-align: left !important;
+            }
+        }
+        .project-link {
+            transition: 0.1s;
+            font-size: 30px;
+        }
+    }
+}
+
+
+#cool {
+    z-index: 4;
+    background-color: $light;
+    position: fixed;
+    bottom: 4rem;
+    border-top: 2px solid $dark;
+    border-bottom: 2px solid $dark;
+    border-right: 2px solid $dark;
+    .cool-text {
+        position: relative;
+        p {
+            color: $light !important;
+        }
+    }
+}
+
+.cool-stuff-container {
+    height: max-content;
+    .cool-stuff {
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        justify-items: center;
+        .play-button {
+            cursor: pointer;
+            width: 60px;
+            height: 60px;
+            background-color: $dark;
+            border: 2px solid $light;
+            content: '►';
+            position:absolute;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            justify-items: center;
+            text-align: center;
+        }
+        .cool-stuff-content {
+            overflow: hidden;
+            width: 400px;
+            height: 400px;
+            aspect-ratio: 16 / 9;
+            iframe {
+                width: 500%;
+                height: 650px;
+                margin-left: -200%;
+                margin-top: -30%;
+            }
+        }
+    }
+}
+
+
+@media only screen and (max-width: 768px) {
+    body {
+        height: auto;
+        overflow: auto;
+    }
+    .mouse, #cool, #about {
+        display: none;
+    }
+    .app-content {
+        flex-direction: column;
+        padding: 0;
+        border: 0px;
+    }
+    #header, #portfolio{
+        position: absolute;
+    }
+    #footer, #header {
+        position: fixed;
+    }
+    #about {
+        .main-title-container {
+            position:relative;
+            width: 100%;
+            h1 { 
+                font-size:50px !important;
+            }
+        }
+    }
+    #portfolio {
+        bottom: 0;
+        margin-bottom: 20px;
+        border: 0px;
+    }
+}
