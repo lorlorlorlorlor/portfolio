@@ -1,14 +1,15 @@
 import React, { Component } from 'react';
+import { Routes, Route } from 'react-router-dom';
+
 import './App.scss';
 import $ from "jquery";
 
 import './style/theme.scss';
 import './scripts/mouse.js';
 
+import Home from './pages/Home';
+import Book from './pages/Book';
 import Header from './components/Header';
-import About from './components/About';
-import Portfolio from './components/Portfolio';
-import Cool from './components/Cool';
 import Footer from './components/Footer';
 
 
@@ -46,10 +47,11 @@ class App extends Component {
         <div className="app-content">
           <div className="mouse">
             hello
-          </div>
-          <About portfolio = { this.state.data } />
-          <Portfolio portfolio = { this.state.data } />
-          <Cool cool = { this.state.data } />
+          </div>       
+          <Routes>
+              <Route path="/" element={<Home portfolio = { this.state.data } />} />
+              <Route path="/book" element={<Book />} />
+          </Routes>
         </div>
         <Footer portfolio = { this.state.data }/>
       </div>

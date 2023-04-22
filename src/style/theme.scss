@@ -92,6 +92,26 @@ h3 {
     }
 }
 
+#nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: row;
+    height: inherit;
+    background-color: $cold-color;
+    z-index: 2;
+    .nav-element {
+        border-right: 2px solid $dark;
+        padding: 15px; 
+        font-weight: bolder;
+        a, a:link, a:visited {
+            text-decoration: none;
+            color: $dark !important;
+        }
+    }
+}
+
 #footer {
     z-index: 2;
     width: 100%;
@@ -141,6 +161,7 @@ h3 {
     padding: 3rem;
     height: fit-content;
     border: 2px solid $dark;
+    border-right: 0px;
     background-color: $light;
 
     a, a:link, a:hover, a:visited {
@@ -181,6 +202,15 @@ h3 {
     }
 }
 
+#book {
+    overflow: scroll;
+    .double-page {
+        display: flex;
+        img {
+            width: 50%;
+        }
+    }
+}
 
 #cool {
     z-index: 4;
@@ -280,6 +310,15 @@ h3 {
             width: 100%;
             h1 { 
                 font-size:50px !important;
+            }
+        }
+    }
+    #book {
+        padding-top: 2.5rem;
+        .double-page {
+            flex-direction: column;
+            img {
+                width: 100%;
             }
         }
     }
