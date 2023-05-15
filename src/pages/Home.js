@@ -10,7 +10,6 @@ class Header extends Component {
         <div id="homepage">
             <About portfolio = { this.props.portfolio } />
             <Portfolio portfolio = { this.props.portfolio } />
-            <!--Cool cool = { this.props.portfolio } /-->
         </div>
       )
   }
