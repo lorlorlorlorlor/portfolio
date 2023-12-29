@@ -1,33 +1,13 @@
 {
     "title": "laoré",
-    "about": "multimedia engineer, creative developer and art lover",
-    "inspirations" : "<iframe id='video' width='250' height='250'  src='https://www.youtube.com/embed/videoseries?list=PLtOauYNMd-7-G6Fb_CP8aiMCI62VR1142&controls=0' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture'></iframe>",
+    "about": "creative developer",
+    "inspirations" : "<iframe id='video' width='250' height='250'  src='https://www.youtube.com/embed/videoseries?list=PL_fZ_delgA6yduiILaMRdlYrq_gjNB2Fg&controls=0' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture'></iframe>",
     "contact" : "issalaure@gmail.com",
     "projects": [ 
-        {
-            "title": "VS-LB Metaverse",
-            "description": "Three.js web development",
-            "link": "https://experience.vs-lb.com"
-        },        
-        {
-            "title": "Whakalodge",
-            "description": "React, PHP web development",
-            "link": "https://whakalodge.com"
-        },
-        {
-            "title": "Layal",
-            "description": "Processing.js title sequence",
-            "link": "https://player.vimeo.com/video/285572902"
-        },
         {
             "title": "Décalage",
             "description": "VR Unity application",
             "link": "https://www.ingenieur-imac.fr/realisations/decalage"
-        },
-        {
-            "title": "Spotify fictional ad",
-            "description": "3DsMax jingle",
-            "link": "https://www.youtube.com/watch?v=otbzw-5uKk8"
         },
         {
             "title": "IMACMAN",

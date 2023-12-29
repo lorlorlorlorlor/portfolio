@@ -7,7 +7,7 @@ class Header extends Component {
         <div id="header">
           <Nav />
           <div className="header-marquee">
-            <marquee behavior="scroll" direction="left" scrollamount="10">
+            <marquee behavior="scroll" direction="left" scrollamount="5">
               <p>{this.props.portfolio.about}</p>
             </marquee>
           </div>

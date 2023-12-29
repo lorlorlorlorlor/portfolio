@@ -11,11 +11,10 @@ class Cool extends Component {
                     <div className="cool-stuff">
                         {
                             (
-                            this.props.cool.inspirations ? 
-                                <div className="cool-stuff-content">
-                                    <div dangerouslySetInnerHTML={{__html: this.props.cool.inspirations }}></div>
+                            this.props.inspirations ? 
+                                <div className="cool-stuff-content"><iframe id='video' width='250' height='250'  src='https://www.youtube.com/embed/videoseries?list=PL_fZ_delgA6y22lJS1MBZGJgK5dPg_YCy&controls=0' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture'></iframe>
                                 </div> :
-                                <div></div>
+                                <div>test</div>
                             )
                         }
                     </div>

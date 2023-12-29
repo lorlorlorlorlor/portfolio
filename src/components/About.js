@@ -5,7 +5,7 @@ class About extends Component {
       return (
         <div id="about" className="about-me">
           <div className="main-title-container">
-            <marquee behavior="scroll" direction="left" scrollamount="30"><h1>{this.props.portfolio.title}</h1></marquee>
+            <marquee behavior="scroll" direction="left" scrollamount="12"><h1>{this.props.portfolio.title}</h1></marquee>
           </div>
         </div>
       )
