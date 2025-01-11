@@ -5,19 +5,14 @@
     "contact" : "issalaure@gmail.com",
     "projects": [ 
         {
-            "title": "Décalage",
-            "description": "VR Unity application",
-            "link": "https://www.ingenieur-imac.fr/realisations/decalage"
+            "title": "CHECK MY BOOK",
+            "description": "creative XR and Web",
+            "link": "/book"
         },
         {
-            "title": "IMACMAN",
-            "description": "C++, OpenGL Game",
+            "title": "MY RESUME",
+            "description": "download",
             "link": "https://www.youtube.com/watch?v=dxCK7rNngLM"
-        },
-        {
-            "title": "C-AR",
-            "description": "AR Unity application",
-            "link": "https://www.facebook.com/100063801753253/videos/497951414366606"
         }
     ]
 }
